@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test client</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>  
+    
+    <div class="container">
+        <div class="container_left" id="input_slot">
+            <div>
+                <label class="container_left__input" for="server_ip">
+                    <span>Server IP </span>
+                    <input type="text" id="server_ip" 
+                            placeholder="Server IP" value="221.139.104.115">
+                </label>
+                <label class="container_left__input" for="port">
+                    <span>Server Port </span>
+                    <input type="text" id="port" 
+                            placeholder="Port" value="8443">
+                </label>
+                <label class="container_left__input" for="client_id">
+                    <span>Client ID </span>
+                    <input type="text" id="client_id" placeholder="ID">
+                </label>
+                <label class="container_left__input" for="web_url">
+                    <span>URL </span>
+                    <input type="text" id="web_url" 
+                            placeholder="Web URL" value="google.com">
+                </label>
+                <label class="container_left__input" for="width">
+                    <span>Width </span>
+                    <input type="text" id="width" 
+                            placeholder="Width" value="512">
+                </label>
+                <label class="container_left__input" for="height">
+                    <span>Height </span>
+                    <input type="text" id="height" 
+                            placeholder="Height" value="512">
+                </label>
+                <label class="container_left__input" for="view_mode">
+                    <h4>View Mode <input type="checkbox" id="view_mode"> </h4>
+                </label>
+            </div>
+            <button id="connect">Connect</button>
+            <button id="disconnect" disabled="disabled">Disconnect</button>
+        </div>
+
+        <div class="container_right">
+            <iframe id="screen" src="test.html"></iframe>
+        </div>
+    </div>
+
+    <script src="web_share.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

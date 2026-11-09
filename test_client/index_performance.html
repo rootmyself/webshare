@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test performance</title>
+
+    <link rel="stylesheet" href="style_performance.css"/>
+</head>
+<body>  
+    
+    <div class="container">
+        <div class="container_up" id="input_slot">
+            <div class="container_up__box">
+                <label class="container_up__input" for="server_ip">
+                    <span>WAS IP </span>
+                    <input type="text" id="server_ip" 
+                            placeholder="Server IP" value="192.168.0.211">
+                </label>
+                <label class="container_up__input" for="port">
+                    <span>WAS Port </span>
+                    <input type="text" id="port" 
+                            placeholder="Port" value="8443">
+                </label>
+                <label class="container_up__input" for="client_id">
+                    <span>Client Count </span>
+                    <input type="text" id="client_count" placeholder="Count">
+                </label>
+                <label class="container_up__input" for="client_id">
+                    <span>Start ID</span>
+                    <input type="text" id="start_id" placeholder="Slot" value="0">
+                </label>
+                <label class="container_up__input" for="web_url">
+                    <span>URL </span>
+                    <input type="text" id="web_url" 
+                            placeholder="Web URL" value="google.com">
+                </label>
+            </div>
+            <button id="start">Start</button>
+            <button id="end" disabled="disabled">End</button>
+        </div>
+
+        <div class="container_down" id="screen_container">
+        </div>
+    </div>
+
+    <script src="web_share.js"></script>
+    <script src="script_performance.js"></script>
+</body>
+</html>
